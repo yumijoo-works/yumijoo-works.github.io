@@ -17,7 +17,7 @@ This study is part of chapter 4, "Medical AI in South Korea and the Expansion of
 
 The data come from OpenAlex. The team collected 42,950 papers published between 2010 and 2024 under the keyword "AI." After keeping English-language records that had all the selected metadata fields, and removing duplicates and corrupted abstracts, 31,804 papers remained. The abstracts were tokenized with a scientific-vocabulary BERT tokenizer plus a custom dictionary of new terms. The analysis combined descriptive statistics, TF-IDF word frequencies by year, a structural topic model with 12 topics, and a comparison of topic shares across three periods (2010-2014, 2015-2019, 2020-2024).
 
-Output grew from 406 papers in 2010 to 2,504 in 2020 and 8,654 in 2023, with 4,048 in 2024. The report attributes much of the rise to COVID-19 and to ChatGPT.
+Output grew from 406 papers in 2010 to 2,504 in 2020 and 8,654 in 2023, and 4,048 in 2024 (a partial year). The report attributes much of the rise to COVID-19 and to ChatGPT.
 
 ![Top 15 TF-IDF words for each year, 2010-2024](./medical-ai-literature/fig-1.jpg)
 

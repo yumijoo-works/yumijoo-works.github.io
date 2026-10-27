@@ -1,5 +1,5 @@
 ---
-title: "On Goyoson's solo exhibition"
+title: "On Goyoson's Solo Exhibition"
 type: "Review"
 role: "Critic and photographer"
 date: 2025-01-01

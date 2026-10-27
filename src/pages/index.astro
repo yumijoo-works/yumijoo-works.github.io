@@ -10,17 +10,18 @@ const span = `${Math.min(...years)}–${Math.max(...years)}`;
 <Base>
   <header class="page-head">
     <h1>Index</h1>
-    <p class="intro">{all.length} entries, {span}. Research, exhibitions and published criticism in one list, newest first.</p>
+    <p class="intro">{all.length} entries, {span}. Choose a practice to see its list, newest first.</p>
   </header>
 
   <div class="filters" role="group" aria-label="Filter by practice">
-    <button type="button" data-filter="all" aria-pressed="true">All</button>
     {sections.map((s) => (
       <button type="button" data-filter={s.key} aria-pressed="false">{s.label}</button>
     ))}
   </div>
 
-  <table class="ledger">
+  <noscript><style>.ledger[hidden] { display: table; }</style></noscript>
+
+  <table class="ledger" hidden>
     <thead>
       <tr>
         <th class="y">Year</th>
@@ -52,8 +53,10 @@ const span = `${Math.min(...years)}–${Math.max(...years)}`;
 </Base>
 
 <script>
-  // Progressive filter: without JS the full index is shown.
+  // The list stays hidden until a practice is chosen. Clicking the chosen practice again hides it.
+  // The choice is kept in the address (#research etc.) so it can be linked. Without JS the full list shows.
   const buttons = document.querySelectorAll<HTMLButtonElement>('.filters button');
+  const table = document.querySelector<HTMLTableElement>('.ledger')!;
   const rows = document.querySelectorAll<HTMLTableRowElement>('.ledger tbody tr');
   const yearCells = Array.from(rows).map((r) => r.querySelector('.y') as HTMLTableCellElement);
   const years = yearCells.map((c, i) => c.textContent || yearCells[i - 1]?.dataset.y || '');
@@ -63,9 +66,10 @@ const span = `${Math.min(...years)}–${Math.max(...years)}`;
   });
 
   function apply(filter: string) {
+    table.hidden = !filter;
     let lastYear = '';
     rows.forEach((row, i) => {
-      const show = filter === 'all' || row.dataset.section === filter;
+      const show = row.dataset.section === filter;
       row.hidden = !show;
       if (show) {
         const y = years[i];
@@ -76,5 +80,19 @@ const span = `${Math.min(...years)}–${Math.max(...years)}`;
     buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === filter)));
   }
 
-  buttons.forEach((b) => b.addEventListener('click', () => apply(b.dataset.filter || 'all')));
+  const keys = Array.from(buttons).map((b) => b.dataset.filter || '');
+  let current = '';
+
+  function choose(filter: string) {
+    current = filter;
+    apply(filter);
+    history.replaceState(null, '', filter ? `#${filter}` : location.pathname);
+  }
+
+  buttons.forEach((b) =>
+    b.addEventListener('click', () => choose(b.dataset.filter === current ? '' : b.dataset.filter || '')),
+  );
+
+  const fromHash = location.hash.slice(1);
+  apply(keys.includes(fromHash) ? (current = fromHash) : '');
 </script>

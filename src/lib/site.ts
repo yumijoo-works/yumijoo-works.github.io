@@ -26,7 +26,7 @@ export const sections: {
     key: 'exhibitions',
     label: 'Exhibitions',
     intro:
-      'Exhibitions I curated since 2022, each selected through an open call, and a work I joined as AI researcher. The shows put the material basis of the digital in a room: servers, dyes, population data and platform metrics.',
+      'The shows put the material basis of the digital in a room.',
   },
   {
     key: 'criticism',

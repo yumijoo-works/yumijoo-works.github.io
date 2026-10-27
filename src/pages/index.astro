@@ -3,14 +3,11 @@ import Base from '../layouts/Base.astro';
 import { getAllWork, sectionByKey, sections, href, year } from '../lib/site';
 
 const all = await getAllWork();
-const years = all.map((w) => w.entry.data.date.getFullYear());
-const span = `${Math.min(...years)}–${Math.max(...years)}`;
 ---
 
 <Base>
   <header class="page-head">
     <h1>Index</h1>
-    <p class="intro">{all.length} entries, {span}. Choose a practice to see its list, newest first.</p>
   </header>
 
   <div class="filters" role="group" aria-label="Filter by practice">

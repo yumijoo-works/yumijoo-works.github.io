@@ -588,6 +588,7 @@ hr {
 @media (max-width: 860px) {
   .site {
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
   }
 
   /* Phones: a two-line header. Name and About / CV on the first line,
@@ -602,6 +603,7 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
+    align-content: flex-start;
     gap: 0.4rem 1rem;
   }
 

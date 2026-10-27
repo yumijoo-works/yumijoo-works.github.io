@@ -1,5 +1,5 @@
 ---
-title: "Catalogue essay for Lee Dohyun's solo exhibition"
+title: "Catalogue Essay for Lee Dohyun's Solo Exhibition"
 type: "Catalogue essay"
 role: "Critic and photographer"
 date: 2025-01-01

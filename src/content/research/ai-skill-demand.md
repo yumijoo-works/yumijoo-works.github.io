@@ -27,7 +27,7 @@ The most common job titles were machine learning engineer (269 records, 15.2%), 
 
 ![Eleven topics by share of text (%), with the Lightcast skill cluster each topic was matched to.](./ai-skill-demand/fig-3.jpg)
 
-The covariates separated the topics. Machine learning and deep learning, AI-based problem solving, data analysis and cloud infrastructure topics were prevalent in postings with no degree requirement, while deep learning computer vision, logistics and control systems, generative AI and prediction modeling were tied to higher-degree postings. Generative AI and cloud infrastructure topics were more common in entry-level and junior postings. STEM majors raised the share of those two topics and lowered the share of general hiring and administrative text. The presentation reads this as employers weighing hands-on ability and recent technical skills more than degree level in the largest topics.
+The covariates separated the topics. Machine learning and deep learning, AI-based problem solving, data analysis and cloud infrastructure topics were prevalent in postings with no degree requirement, while deep learning computer vision, logistics and control systems, generative AI and prediction modeling were tied to higher-degree postings. Generative AI and cloud infrastructure topics were more common in entry-level and junior postings. Postings that asked for a STEM major had a higher share of those two topics and a lower share of general hiring and administrative text. The presentation reads this as employers giving more weight to hands-on ability and up-to-date technical skills than to degree level in the largest topics.
 
 ![STM results: how degree, experience and STEM major relate to topic prevalence.](./ai-skill-demand/fig-4.jpg)
 

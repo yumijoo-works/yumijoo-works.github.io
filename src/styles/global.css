@@ -712,3 +712,12 @@ hr {
 .embed-link a {
   color: var(--accent);
 }
+
+/* The index always shows one practice at a time, so its column is redundant. */
+.ledger .s {
+  display: none;
+}
+
+.ledger .y {
+  white-space: nowrap;
+}

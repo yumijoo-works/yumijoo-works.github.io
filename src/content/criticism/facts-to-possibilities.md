@@ -1,6 +1,5 @@
 ---
 title: "From Fact to Possibility: For the Agora in the Age of AI"
-type: "Essay"
 role: "Critic"
 date: 2025-06-05
 dateLabel: "Jun 2025"

@@ -1,6 +1,5 @@
 ---
 title: "For Invisible Data"
-type: "Invited talk"
 role: "Speaker"
 date: 2025-07-01
 dateLabel: "Jul 2025"

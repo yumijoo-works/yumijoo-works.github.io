@@ -1,6 +1,5 @@
 ---
 title: "Trot Variety Shows That Pornographize Youth"
-type: "Essay"
 role: "Critic"
 date: 2020-10-07
 dateLabel: "Oct 2020"

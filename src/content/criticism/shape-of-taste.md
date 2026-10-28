@@ -1,6 +1,5 @@
 ---
 title: "The Shape of Taste"
-type: "Column series"
 role: "Columnist and photographer"
 date: 2022-12-01
 dateLabel: "Mar – Dec 2022"

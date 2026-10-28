@@ -1,6 +1,5 @@
 ---
 title: "Pixels of the Body, Sites of Emotion"
-type: "Review"
 role: "Critic"
 date: 2025-02-01
 dateLabel: "Feb 2025"

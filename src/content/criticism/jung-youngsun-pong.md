@@ -1,6 +1,5 @@
 ---
 title: "Gardens Robbed of Breath: On the Picturesque Desire in Jung Youngsun: For All Things That Breathe on This Land"
-type: "Review"
 role: "Critic"
 date: 2024-10-01
 dateLabel: "Oct 2024"

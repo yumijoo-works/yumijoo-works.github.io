@@ -1,6 +1,5 @@
 ---
 title: "Exhibition Review for OK GO"
-type: "Catalogue essay"
 role: "Critic"
 date: 2016-12-01
 dateLabel: "2016"

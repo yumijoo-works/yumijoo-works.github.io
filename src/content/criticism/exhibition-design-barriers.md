@@ -1,6 +1,5 @@
 ---
 title: "Exhibition Design: Remove the Barriers"
-type: "Essay"
 role: "Critic"
 date: 2024-03-07
 dateLabel: "Mar 2024"

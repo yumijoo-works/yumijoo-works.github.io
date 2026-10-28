@@ -42,7 +42,7 @@ const key = section.key as SectionKey;
       <p class="lede">{d.summary}</p>
     </div>
     <dl class="meta-list">
-      <dt>Category</dt><dd>{d.type}</dd>
+      {d.type && <><dt>Category</dt><dd>{d.type}</dd></>}
       <dt>Position</dt><dd>{d.role}</dd>
       <dt>Date</dt><dd>{d.dateLabel}</dd>
       {d.venue && <><dt>Place</dt><dd>{d.venue}{d.location ? `, ${d.location}` : ''}</dd></>}

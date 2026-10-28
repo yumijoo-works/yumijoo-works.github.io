@@ -14,7 +14,7 @@ const url = href(`/${section}/${entry.id}/`);
 <li class="entry">
   <div class="meta">
     <div class="when">{d.dateLabel}</div>
-    <div>{d.type}</div>
+    {d.type && <div>{d.type}</div>}
     <div>{d.role}</div>
     {d.venue && <div>{d.venue}</div>}
     {d.location && <div>{d.location}</div>}

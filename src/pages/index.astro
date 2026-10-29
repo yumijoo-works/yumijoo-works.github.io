@@ -64,6 +64,7 @@ const all = await getAllWork();
 
   function apply(filter: string) {
     table.hidden = !filter;
+    table.dataset.filter = filter;
     let lastYear = '';
     rows.forEach((row, i) => {
       const show = row.dataset.section === filter;

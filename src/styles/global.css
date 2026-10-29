@@ -302,6 +302,11 @@ hr {
   color: var(--ink-2);
 }
 
+/* Criticism entries carry no type, so the column goes when that practice is shown. */
+.ledger[data-filter='criticism'] .k {
+  display: none;
+}
+
 .ledger tr[hidden] {
   display: none;
 }
